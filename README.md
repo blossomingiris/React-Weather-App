@@ -5,7 +5,7 @@
 :heavy_check_mark: allows the user to get real-time  weather information for current position and for any city of the world</br>
 :heavy_check_mark: weather information contains current conditions: temperature, pressure, humidity and wind and also includes forecasts for 5 day outlook with max and min temperature</br>
 :heavy_check_mark: built with ReactJS and OpenWeather API </br>
-:heavy_check_mark: here is link to [demo](https://blossomingiris.github.io/react-weather-app/)
+:heavy_check_mark: here is link to [demo](https://weathering-with-you.onrender.com)
 
 
 ## How to get started with app?
