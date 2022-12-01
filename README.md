@@ -16,7 +16,7 @@
 ## Usage:
 - Allow browser use your location and start to search typing city's name in search box.
 
-### Issues
+### Issues with usage:
 1. To get current location i use navigator.geolocation API which returns a user geolocation based on the user's browser position. Unfortunately it can be not always precise. 
 2. There is delay in API request for daily forecast. Sometimes doesn't update momently.
 
