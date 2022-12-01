@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/102720711/203282659-4a5e7ae5-2bc6-49b5-ac51-d779fe357d6c.png" width="550" height="350" align = "right" margin-top = "100"/> 
+<img src="https://user-images.githubusercontent.com/102720711/203282659-4a5e7ae5-2bc6-49b5-ac51-d779fe357d6c.png"/> 
 
 # Weather application (React) :partly_sunny:
 
@@ -11,7 +11,7 @@
 - OpenWeather API
 
 ## Demo: 
-: [Here](https://weathering-with-you.onrender.com)
+[Here](https://weathering-with-you.onrender.com)
 
 ## Usage:
 - Allow browser use your location and start to search typing city's name in search box.
