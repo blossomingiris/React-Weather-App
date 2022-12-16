@@ -4,7 +4,7 @@
 
 ## Description: 
 :heavy_check_mark: allows the user to get real-time  weather information for current position and for any city of the world</br>
-:heavy_check_mark: weather information contains current conditions: temperature, pressure, humidity and wind and also includes forecasts for 5 day outlook with max and min temperature</br>
+:heavy_check_mark: weather information contains current conditions: temperature, pressure, humidity and wind and also contains forecasts for 5 days with maximum and minimum temperatures.</br>
 
 ## Technologies: 
 - React.js
@@ -16,9 +16,9 @@
 ## Usage:
 - Allow browser use your location and start to search typing city's name in search box.
 
-### Issues with usage:
-1. To get current location i use navigator.geolocation API which returns a user geolocation based on the user's browser position. Unfortunately it can be not always precise. 
-2. There is delay in API request for daily forecast. Sometimes doesn't update momently.
+### Issues with geolocation:
+To get current location i use geolocation API  which returns a user geolocation based on the user's browser position. Unfortunately it can be not always precise. 
+
 
 ## How to get started with app?
 - Make sure you have own credentials in frontend/.env for REACT_APP_API_KEY (API key for OpenWeather API),  REACT_APP_URL( https://api.openweathermap.org/data/2.5/forecast) and REACT_APP_URL_DAILY_FORECAST (https://api.openweathermap.org/data/2.5/onecall)
