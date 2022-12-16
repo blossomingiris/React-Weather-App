@@ -105,7 +105,7 @@ function App() {
               </div>
               <div>
                 <div className='today_forecast'>
-                  <p className='today_forecast_p'>Today forecast</p>
+                  <p className='today_forecast_p'>Today weather forecast</p>
                 </div>
                 <span className='today_forecast_span'></span>
                 <div className='container_date'>
