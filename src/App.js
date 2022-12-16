@@ -16,20 +16,21 @@ import {
 function App() {
   const [weatherData, setWeatherData] = useState()
   const [dailyForecast, setDailyForecast] = useState()
-  const [coords, setCoords] = useState({})
 
   //get city name or user location coordinates for search
   const [query, setQuery] = useState('')
+  // const query = useRef()
 
   //fetch weather data based on city name
   const searchLocation = async (e) => {
     const data = await getWeatherDataByCity(query)
     setWeatherData(data)
-    setCoords(data.city.coord)
-    if (coords.lat && coords.lon) {
-      const daily = await getDailyWeatherData(coords.lat, coords.lon)
+    if (data.city.coord.lat && data.city.coord.lon) {
+      const daily = await getDailyWeatherData(
+        data.city.coord.lat,
+        data.city.coord.lon
+      )
       setDailyForecast(daily.daily)
-      console.log('data', daily)
     }
     setQuery('')
   }
@@ -44,7 +45,7 @@ function App() {
 
   //fetch weather data based on geolocation in user's browser
   //!navigator.geolocation does't use GPS to get latitude and longitude.
-  //!Mostly the location return by this api is the location of your internet service providers hub/center etc.
+  //!Mostly the location return by this api is the location of user internet service providers hub/center etc.
   //!Can give low precisely result of user location.
   useEffect(() => {
     let lat, long
@@ -77,15 +78,12 @@ function App() {
     }
   }, [])
 
-  useEffect(() => {
-    searchLocation()
-  }, [coords])
-
   return (
     <div className='app'>
       <div className='container'>
         {weatherData === undefined ? (
-          <div className='message_container'>
+          <div className='loader_container'>
+            {' '}
             <p>Loading...</p>
           </div>
         ) : (
@@ -170,7 +168,7 @@ function App() {
             )}
             <div className='daily_forecast_container'>
               <div className='daily_forecast'>
-                <p className='today_forecast_p'>Daily forecast</p>
+                <p className='today_forecast_p'>5 days weather forecast</p>
               </div>
               <span className='daily_forecast_span'></span>
               <div className='daily_forecast_content_wrapper'>
@@ -192,5 +190,3 @@ function App() {
 }
 
 export default App
-
-// new Date(1504095567183).toLocaleTimeString("en-US")
