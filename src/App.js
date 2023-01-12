@@ -83,7 +83,6 @@ function App() {
       <div className='container'>
         {weatherData === undefined ? (
           <div className='loader_container'>
-            {' '}
             <p>Loading...</p>
           </div>
         ) : (
