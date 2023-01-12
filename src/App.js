@@ -16,7 +16,6 @@ import {
 function App() {
   const [weatherData, setWeatherData] = useState()
   const [dailyForecast, setDailyForecast] = useState()
-
   //get city name or user location coordinates for search
   const [query, setQuery] = useState('')
   // const query = useRef()
