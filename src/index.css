@@ -279,6 +279,7 @@ input::placeholder {
 @media screen and (max-width: 1024px) {
   .container {
     padding-inline: 30px;
+    margin: 30px;
   }
 }
 
