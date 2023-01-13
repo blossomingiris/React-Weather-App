@@ -18,7 +18,6 @@ function App() {
   const [dailyForecast, setDailyForecast] = useState()
   //get city name or user location coordinates for search
   const [query, setQuery] = useState('')
-  // const query = useRef()
 
   //fetch weather data based on city name
   const searchLocation = async (e) => {
@@ -89,10 +88,10 @@ function App() {
             <input
               type='text'
               value={query}
-              placeholder='Enter location...'
+              placeholder='Enter location..'
               onChange={(e) => setQuery(e.target.value)}
               onKeyPress={handleKeypress}
-              autoFill
+              autoComplete
             />
             <FiSend onClick={searchLocation} />
           </div>

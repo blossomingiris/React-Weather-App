@@ -279,13 +279,13 @@ input::placeholder {
 .loader {
   width: 48px;
   height: 48px;
-  background: linear-gradient(to top, #fed3b7, #fcc1a1);
+  border: 1px solid rgba(41, 55, 66, 0.755);
   display: block;
   margin: 20px auto;
   position: relative;
   box-sizing: border-box;
   border-radius: 2px;
-  animation: rotationBack 2s ease-in-out infinite reverse;
+  animation: rotationBack 1s ease-in-out infinite reverse;
 }
 
 .loader::before {
@@ -297,9 +297,8 @@ input::placeholder {
   position: absolute;
   width: 48px;
   height: 48px;
-  background: linear-gradient(to left, #fed3b7, #fcc1a1);
+  border: 1px solid rgba(41, 55, 66, 0.755);
   border-radius: 2px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
 
 .loader::after {
@@ -311,9 +310,8 @@ input::placeholder {
   position: absolute;
   left: 50%;
   top: 50%;
-  background: #fff7d4;
+  border: 1px solid rgba(41, 55, 66, 0.755);
   transform: translate(-50%, -50%);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
 
 @keyframes rotationBack {
